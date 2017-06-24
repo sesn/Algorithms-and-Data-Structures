@@ -1,3 +1,5 @@
+import time
+
 def findsmallest(arr):
     smallest = arr[0]
     smallest_index = 0
@@ -14,4 +16,6 @@ def selectionSort(arr):
         newArr.append(arr.pop(smallest))
     return newArr
 
+start_time = time.time()
 print selectionSort([5,3,6,2,10])
+print("Total Time taken %s seconds" % (time.time() - start_time))
